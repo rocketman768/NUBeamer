@@ -1,0 +1,28 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{default}
+\usepackage{embedfile}
+\usetheme{Northwestern}
+
+\embedfile{\jobname.tex}
+
+\title{Some Ph.D. Thesis}
+\author{John Doe}
+
+\AtBeginSubsection[]{
+  \begin{frame}
+    \tableofcontents[ 
+        currentsubsection, 
+        hideothersubsections, 
+        sectionstyle=show/hide, 
+        subsectionstyle=show/shaded, 
+    ]
+  \end{frame}
+}
+
+\begin{document}
+
+\maketitle
+
+\end{document}

@@ -1,0 +1,25 @@
+\DeclareOptionBeamer{compress}{\beamer@compresstrue}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\useoutertheme[footline=authortitle]{miniframes}
+\useinnertheme{circles}
+\usecolortheme{whale}
+\usecolortheme{orchid}
+
+\definecolor{beamer@nupurple}{rgb}{0.314,0.125,0.384}
+
+\setbeamercolor{structure}{fg=beamer@nupurple}
+\setbeamercolor{titlelike}{parent=structure}
+\setbeamercolor{frametitle}{fg=beamer@nupurple}
+\setbeamercolor{title}{fg=beamer@nupurple}
+\setbeamercolor{item}{fg=beamer@nupurple}
+
+\mode
+<all>
+
+% Northwestern logo on title page.
+\titlegraphic{
+ \includegraphics[width=3cm]{nulogo.png}
+}
